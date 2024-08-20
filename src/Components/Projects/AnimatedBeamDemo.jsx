@@ -1,9 +1,9 @@
 "use client";
 
 import React, { forwardRef, useRef } from "react";
-import { cn } from "../../lib/utils";
-import { AnimatedBeam } from "../magicui/animated-beam";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
+import { AnimatedBeam } from "../magicui/animated-beam";
 
 const Circle = forwardRef(function Circle({ className, children }, ref) {
   return (

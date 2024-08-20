@@ -1,4 +1,6 @@
-import { HomeBtn } from "../../Components/HomeBtn.jsx";
+// import { HomeBtn } from "../../Components/HomeBtn.jsx";
+
+import { HomeBtn } from "@/Components/HomeBtn";
 
 
 export default function SubPagesLayout({ children }) {

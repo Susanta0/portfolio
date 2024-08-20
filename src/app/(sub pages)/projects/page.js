@@ -1,9 +1,13 @@
 import Image from "next/image";
 import bg from "../../../../public/background/bg_home.jpeg"
-import { ProjectList } from "../../../Components/Projects/index.jsx";
-import { projectsData } from "../../data";
-import { RenderModel } from "../../../Components/RenderModel.jsx";
-import Staff from "../../../Components/models/Staff.jsx";
+import { ProjectList } from "@/Components/Projects";
+import { projectsData } from "@/app/data";
+import { RenderModel } from "@/Components/RenderModel";
+import Staff from "@/Components/models/Staff";
+// import { ProjectList } from "../../../Components/Projects/index.jsx";
+// import { projectsData } from "../../data";
+// import { RenderModel } from "../../../Components/RenderModel.jsx";
+// import Staff from "../../../Components/models/Staff.jsx";
 
 
 
