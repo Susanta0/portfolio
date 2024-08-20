@@ -1,9 +1,9 @@
 import Image from "next/image";
 import bg from "../../../../public/background/nights.png"
-import { RenderModel } from "@/Components/RenderModel";
-import Lamp from "@/Components/models/Lamp";
-import { AboutDetails } from "@/Components/About";
-import { ProfilePic } from "@/Components/About/ProfilePic";
+import { RenderModel } from "../../../Components/RenderModel.jsx";
+import Lamp from "../../../Components/models/Lamp.jsx";
+import { AboutDetails } from "../../../Components/About/index.jsx";
+// import { ProfilePic } from "@/Components/About/ProfilePic";
 
 
 export default function About() {

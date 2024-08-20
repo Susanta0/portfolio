@@ -1,6 +1,6 @@
 // "use client";
 import React from "react";
-import { Dock, DockIcon } from "../magicui/dock";
+// import { Dock, DockIcon } from "../magicui/dock";
 import Image from "next/image";
 import { ItemLayout } from "./ItemLayout";
 

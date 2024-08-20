@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import clsk from "clsx";
-import { FirePointBackground } from "@/Components/FirePointBackground";
+import { FirePointBackground } from "../Components/FirePointBackground.jsx";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 

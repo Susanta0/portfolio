@@ -1,8 +1,8 @@
 import Image from "next/image";
 import bg from "../../public/background/bg.png";
-import { RenderModel } from "@/Components/RenderModel";
-import Cartun from "@/Components/models/Scene";
-import { Navigation } from "@/Components/navigate";
+import { RenderModel } from "../Components/RenderModel.jsx";
+import Cartun from "../Components/models/Scene.jsx";
+import { Navigation } from "../Components/navigate/index.jsx";
 
 export default function Home() {
   return (
