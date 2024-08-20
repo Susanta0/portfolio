@@ -141,7 +141,7 @@ export function Form() {
         <motion.input
           variants={itemValues}
           type="submit"
-          value="Send your message!"
+          value={"Send your message!"}
           className="px-10 py-4 rounded-md shadow-lg bg-background border border-accent/30 border-solid hover:shadow-glass-sm backdrop-blur-sm text-foreground focus:outline-none focus:ring-accent/50 cursor-pointer capitalize"
         />
       </motion.form>
