@@ -1,6 +1,6 @@
 import Image from "next/image";
 import bg from "../../../../public/background/bg2.png";
-import { Form } from "@/Components/Contact/Form";
+import { Form } from "../../../Components/Contact/Form.jsx";
 
 
 export default function Contact() {
