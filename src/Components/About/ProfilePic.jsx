@@ -3,6 +3,7 @@ import { useSpring, animated, config } from "react-spring";
 import blobshape from "blobshape";
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import profilePic from "/public/profile/profilepic.png"
 
 export const ProfilePic = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -16,35 +17,39 @@ export const ProfilePic = () => {
   }
 
   return (
-    <div className="App">
-      <div style={{ position: "relative" }}>
+    <div className="">
+      <div style={{ position: "relative", }} className="w-[450px]">
         <Blob
-          color="#000000"
+          color="#6F6032"
           style={{ opacity: 0.2, position: "absolute", top: 0, left: 0 }}
         />
         <Blob
-          color="#000000"
+          color="#6F6032"
           style={{ opacity: 0.4, position: "absolute", top: 0, left: 0 }}
         />
         <Blob
-          color="#000000"
+          color="#6F6032"
           style={{ opacity: 0.5, position: "absolute", top: 0, left: 0 }}
         />
-        <Blob
-          image
+        <
+          
+          Image
+          src={profilePic}
+          width={230}
+          height={0}
+          className=" rounded-full scale-105"
           style={{
-            width: "85%",
+            // width: "85%",
             opacity: 0.95,
             position: "relative",
-            top: 25,
-            left: 35,
-            borderRadius: "50%",
-            border:"1px solid red"
-            
+            top: 0,
+            left: 65,
           }}
         />
       </div>
     </div>
+  
+
   );
 }
 
@@ -69,25 +74,18 @@ function Blob(props) {
   });
 
   return (
-    <svg viewBox="0 0 500 500" width="130%" style={props.style} className="mb-20 mr-10">
+    <svg viewBox="0 0 500 500" width="" style={props.style} className="">
       {!props.image && <animated.path fill={props.color} d={path} />}
       {props.image && (
         <>
-          <defs>
+          {/* <defs>
             <clipPath id="a">
               <animated.path fill={props.color} d={path} />
             </clipPath>
-          </defs>
-          <Image
-            className="absolute opacity-90"
-            width={500}
-            height={500}
-            src="/profilepic.png"
-            alt="Profile Picture"
-            style={{ clipPath: "url(#a)" }}
-          />
+          </defs> */}
         </>
       )}
     </svg>
   );
 }
+
