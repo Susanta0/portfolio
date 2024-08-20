@@ -9,7 +9,7 @@ import { ProfilePic } from "@/Components/About/ProfilePic";
 export default function About() {
   return (
     <>
-      <Image src={bg} alt="home background images" className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-25"/>
+      <Image src={bg} height={0} width={0} alt="home background images" className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-25"/>
 
     <div className="w-full h-3/5 xs:h-3/4 sm:h-screen absolute top-1/2 -translate-y-1/2 left-0 -z-10">
     <RenderModel>

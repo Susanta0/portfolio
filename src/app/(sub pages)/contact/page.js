@@ -8,6 +8,8 @@ export default function Contact() {
     <>
       <Image
         src={bg}
+        height={0}
+        width={0}
         alt="home background images"
         className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-25"
       />
