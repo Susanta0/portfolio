@@ -29,7 +29,7 @@ export function Form() {
   } = useForm();
 
   const sendEmail = (params) => {
-    const toastId = toast.loading("Sending your message, please wait...");
+    const toastId = toast.loading(`Sending your message, please wait...`);
     emailjs
       .send(
         process.env.NEXT_PUBLIC_SERVICE_ID,
@@ -45,7 +45,7 @@ export function Form() {
       .then(
         () => {
           toast.success(
-            "I have received your message, I will get back to you as soon!",
+            `I have received your message, I will get back to you as soon!`,
             {
               id: toastId,
             }
@@ -53,7 +53,7 @@ export function Form() {
         },
         (error) => {
           toast.error(
-            "There was an error sending your message, Please try again later!",
+            `There was an error sending your message, Please try again later!`,
             {
               id: toastId,
             }
@@ -63,7 +63,7 @@ export function Form() {
   };
   const onSubmit = (data) => {
     const templateParam = {
-      to_name: "Susanta",
+      to_name: `Susanta`,
       from_name: data.name,
       reply_to: data.email,
       message: data.message,
