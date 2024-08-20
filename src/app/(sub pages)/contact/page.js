@@ -22,7 +22,7 @@ export default function Contact() {
           </h1>
           <p className="text-center font-light text-sm xs:text-base">
             Step into the circle of code and let your words flow into the fabric
-            of the digital world. Whether you're looking to collaborate on MERN
+            of the digital world. Whether you&apos;re looking to collaborate on MERN
             stack projects, solve coding challenges, or share your development
             journey, your messages are valued here. Use the form below to send
             your thoughts through this virtual network, and await the response
