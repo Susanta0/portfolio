@@ -28,7 +28,7 @@ export default function Contact() {
             of the code.
           </p>
         </div>
-        <Form/>
+        {/* <Form/> */}
       </article>
     </>
   );
