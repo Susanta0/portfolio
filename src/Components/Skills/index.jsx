@@ -1,12 +1,14 @@
 import React from 'react'
-import IconCloud from "@/components/magicui/icon-cloud";
+// import IconCloud from "@/components/magicui/icon-cloud";
 // import ShineBorder from '@/components/magicui/shine-border';
-import SparklesText from '@/components/magicui/sparkles-text';
+// import SparklesText from '@/components/magicui/sparkles-text';
 import Image from 'next/image';
 import tech_tools from "/public/skills/techStack2.gif"
 import frontend from "/public/skills/frontend.gif"
 import backend from "/public/skills/backend.gif"
 import tools from "/public/skills/tools.gif"
+import IconCloud from '../magicui/icon-cloud';
+import SparklesText from '../magicui/sparkles-text';
 const slugs = [
     
     "javascript",
