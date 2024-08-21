@@ -1,7 +1,4 @@
 import React from 'react'
-// import IconCloud from "@/components/magicui/icon-cloud";
-// import ShineBorder from '@/components/magicui/shine-border';
-// import SparklesText from '@/components/magicui/sparkles-text';
 import Image from 'next/image';
 import tech_tools from "/public/skills/techStack2.gif"
 import frontend from "/public/skills/frontend.gif"
@@ -59,16 +56,16 @@ export const TechSkillTools = () => {
       > */}
          <div id='skills' className="flex items-center gap-2">
           <Image width={0} height={0} src={tech_tools} alt="Tech Stack" className="h-9 w-9 custom-bg rounded-full"/>
-          <SparklesText className="font-bold text-2xl" text="Tech Stack & Tools" />
+          <SparklesText className="font-bold text-xs sm:text-1xl md:text-2xl lg:text-2xl" text="Tech Stack & Tools" />
           <Image width={0} height={0} src={tech_tools} alt="Tech Stack" className="h-9 w-9 custom-bg rounded-full"/>
         </div>
         
-        <div className='flex w-full justify-evenly mt-10'>
+        <div className='flex flex-col gap-6 w-full justify-evenly mt-10 xs:flex-col xs:gap-6 md:flex-col sm:flex-col sm:gap-10 lg:flex-row'>
             {/* frontend */}
             <div className='flex flex-col space-y-2 items-center'>
                 <div className="flex items-center gap-2">
                     <Image width={0} height={0} src={frontend} alt="Frontend" className="h-10 w-10 custom-bg rounded-full"/>
-                    <SparklesText className="font-bold text-2xl" text="Frontend" />
+                    <SparklesText className="font-bold text-sm sm:text-1xl md:text-2xl lg:text-2xl" text="Frontend" />
                     <Image width={0} height={0} src={frontend} alt="Frontend" className="h-10 w-10 custom-bg rounded-full"/>
                 </div>
                 <div className=" relative flex h-full w-full max-w-[22rem] items-center justify-center overflow-hidden rounded-lg border custom-bg">
@@ -80,7 +77,7 @@ export const TechSkillTools = () => {
             <div className='flex flex-col space-y-2 items-center'>
                 <div className="flex items-center gap-2">
                     <Image height={0} width={0} src={backend} alt="Backend" className="h-10 w-10 custom-bg rounded-full"/>
-                    <SparklesText className="font-bold text-xl" text="Backend" />
+                    <SparklesText className="font-bold text-sm sm:text-1xl md:text-2xl lg:text-2xl" text="Backend" />
                     <Image height={0} width={0} src={backend} alt="Backend" className="h-10 w-10 custom-bg rounded-full"/>
                 </div>
                 <div className=" relative flex h-full w-full max-w-[22rem] items-center justify-center overflow-hidden rounded-lg border custom-bg">
@@ -92,7 +89,7 @@ export const TechSkillTools = () => {
             <div className='flex flex-col space-y-2 items-center'>
                 <div className="flex items-center gap-2">
                     <Image height={0} width={0} src={tools} alt="Tools" className="h-10 w-10 custom-bg rounded-full"/>
-                    <SparklesText className="font-bold text-2xl" text="Tools" />
+                    <SparklesText className="font-bold text-sm sm:text-1xl md:text-2xl lg:text-2xl" text="Tools" />
                     <Image height={0} width={0} src={tools} alt="Tools" className="h-10 w-10 custom-bg rounded-full"/>
                 </div>
                 <div className=" relative flex h-full w-full max-w-[22rem] items-center justify-center overflow-hidden rounded-lg border custom-bg">
