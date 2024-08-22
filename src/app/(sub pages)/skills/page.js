@@ -1,13 +1,21 @@
 import Image from "next/image";
 import bg from "../../../../public/background/code.png";
 import { RenderModel } from "@/Components/RenderModel";
-import LookingGlass from "@/Components/models/LookingGlass";
 import { TechSkillTools } from "@/Components/Skills";
+import dynamic from "next/dynamic";
 
 export default function About() {
+  const LookingGlass = dynamic(
+    () => import("@/Components/models/LookingGlass"),
+    {
+      ssr: false,
+    }
+  );
   return (
     <>
       <Image
+        priority
+        sizes="100vw"
         src={bg}
         height={0}
         width={0}
@@ -17,12 +25,12 @@ export default function About() {
 
       <div className="w-full h-3/5 xs:h-3/4 sm:h-screen absolute top-40 lg:top-60 -translate-y-1/2 left-0 -z-10">
         <RenderModel>
-         <LookingGlass/>
+          <LookingGlass />
         </RenderModel>
       </div>
 
       <div className="relative w-full h-screen flex flex-col items-center justify-center mt-[35em] lg:mt-44 sm:mt-[40em]">
-      <TechSkillTools/>
+        <TechSkillTools />
       </div>
     </>
   );

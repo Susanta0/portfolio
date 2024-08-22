@@ -30,3 +30,88 @@
     transform: translate(100px, 100px);
   }
 }
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+}
+
+.box {
+  position: relative;
+  height: 400px;
+  width: 300px;
+  background: url("/profile/profilepic.png");
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0 20px 5px 5px rgba(214, 231, 23, 0.2);
+  animation: animate1 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+  z-index: 1; 
+}
+
+.box::before,
+.box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent; 
+  transition: all 1s ease-in-out;
+  z-index: -1;
+}
+
+/* First additional bubble shape */
+.box::before {
+  animation: animate2 6s ease-in-out infinite;
+  top: -30px;
+  left: -30px;
+  width: 350px;
+  height: 450px;
+  box-shadow: 0 20px 5px 5px rgba(23, 231, 214, 0.2);
+}
+
+
+@keyframes animate1 {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    border-radius: 50% 50% 40% 60%/60% 40% 50% 50%;
+  }
+  50% {
+    border-radius: 40% 60% 50% 50%/50% 60% 40% 50%;
+  }
+  100% {
+    border-radius: 50% 50% 40% 60%/60% 40% 50% 50%;
+  }
+}
+
+@media (max-width: 480px){
+  .box{
+    width: 250px;
+  }
+  .box::before,
+.box::after {
+  width: 100%;
+}
+.box::before{
+  top: -30px;
+  left: -10px;
+  width: 270px;
+  height: 430px;
+}
+}

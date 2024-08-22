@@ -2,15 +2,19 @@ import Image from "next/image";
 import bg from "../../public/background/bg.png";
 import { Navigation } from "@/Components/navigate";
 import { RenderModel } from "@/Components/RenderModel";
-import Cartun from "@/Components/models/Scene";
-// import { RenderModel } from "../Components/RenderModel.jsx";
-// import Cartun from "../Components/models/Scene.jsx";
-// import { Navigation } from "../Components/navigate/index.jsx";
+import dynamic from "next/dynamic";
+// import Man from "@/Components/models/Man";
 
 export default function Home() {
+  const Man = dynamic(() => import("@/Components/models/Man"), {
+    ssr: false,
+  });
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between relative">
       <Image
+        priority
+        sizes="100vw"
         src={bg}
         alt="home background images"
         fill
@@ -19,8 +23,9 @@ export default function Home() {
 
       <div className="w-full h-screen">
         <Navigation />
-        <RenderModel>
-          <Cartun />
+        <RenderModel className="-mt-36">
+          {/* <Cartun /> */}
+          <Man/>
         </RenderModel>
       </div>
     </main>

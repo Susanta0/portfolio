@@ -155,7 +155,7 @@ export const projectsData = [
     // },
     {
       label: "Resume",
-      link: "/public/Susanta Samanta_Resume.pdf",
+      link: "/Susanta_Samanta_Resume.pdf",
       icon: "resume",
       newTab: true,
     },

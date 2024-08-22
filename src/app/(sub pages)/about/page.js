@@ -1,14 +1,18 @@
 import Image from "next/image";
 import bg from "../../../../public/background/nights.png";
 import { RenderModel } from "@/Components/RenderModel";
-import Lamp from "@/Components/models/Lamp";
 import { AboutDetails } from "@/Components/About";
-import { ProfilePic } from "@/Components/About/ProfilePic";
-
+import "../../globals.css";
+import dynamic from "next/dynamic";
 export default function About() {
+  const Lamp = dynamic(() => import("@/Components/models/Lamp"), {
+    ssr: false,
+  });
   return (
     <>
       <Image
+        priority
+        sizes="100vw"
         src={bg}
         height={0}
         width={0}
@@ -33,7 +37,9 @@ export default function About() {
         </div>
       </div>
       <div className="-mt-64">
-        <ProfilePic />
+        <div className="wrapper">
+          <div className="box"></div>
+        </div>
       </div>
 
       <AboutDetails />

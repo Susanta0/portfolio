@@ -18,10 +18,11 @@ export const ProfilePic = () => {
 
   return (
     <div className="">
-      <div style={{ position: "relative", }} className="w-[450px]">
+      <div style={{ position: "relative", }} className="w-[300px] lg:w-[450px]">
         <Blob
           color="#6F6032"
-          style={{ opacity: 0.2, position: "absolute", top: 0, left: 0 }}
+          style={{ opacity: 0.2, position: "absolute", top: 0, left: 0, }}
+          
         />
         <Blob
           color="#6F6032"
@@ -74,7 +75,7 @@ function Blob(props) {
   });
 
   return (
-    <svg viewBox="0 0 500 500" width="" style={props.style} className="">
+    <svg viewBox="0 0 500 500" width="" style={props.style} className="border">
       {!props.image && <animated.path fill={props.color} d={path} />}
       {props.image && (
         <>
