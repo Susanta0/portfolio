@@ -16,12 +16,14 @@ Websites:
 
 */
 
-import fiverr from "../../public/projects/fiverr.png"
 import sephora from "../../public/projects/sephora.png"
 import boat from "../../public/projects/boat.png"
-import tata from "../../public/projects/tata.png"
 import shillshowhub from "../../public/projects/shillshowhub.png"
-import pluralsight from "../../public/projects/pluralsight.png"
+import canva from "../../public/projects/canva.png"
+import ai from "../../public/projects/ai-icon.png"
+import googleAuth from "../../public/projects/google-authenticator-icon.png"
+import razorpay from "../../public/projects/razorpay-icon.png"
+import jwt from "../../public/projects/jwt.png"
 import html from "../../public/projects/icons8-html.svg"
 import css from "../../public/projects/icons8-css.svg"
 import js from "../../public/projects/icons8-javascript.svg"
@@ -36,29 +38,48 @@ import chakra from "../../public/projects/icons8-chakra-ui.svg"
 export const projectsData = [
     {
       id: 1,
-      name: "Fiverr",
-      description: "This is a full-stack application built to mimic the functionalities of the popular freelancing platform, utilizing a modern tech stack and focusing on key features such as authentication, dynamic content creation, and responsive design.",
-      images:fiverr,
+      name: "Boat lifestyle",
+      description: "This project is a web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). It is designed to manage and showcase boat lifestyle products.",
+      images:boat,
       techStack:[
-        {jsLogo:js, label:"JavaScript"},
         {react:react,label:"React"},
         {node:node,label:"Node.js"},
-        {express:express,label:"Express"},
         {mongo:mongodb,label:"MongoDB"},
-        {chakraUi:chakra,label:"Chakra UI"},
+        {express:express,label:"Express"},
         {tailwind:tailwind,label:"Tailwind Css"},
+        {razorpay:razorpay,label:"Razorpay"},
+        {jwt:jwt,label:"JWT"},
       ],
-      github:"https://github.com/Susanta0/Fiverr",
-      liveLink: "https://fiverr-one-zeta.vercel.app/",
+      github:"https://github.com/Susanta0/boat_lifestyle",
+      liveLink:"https://boat-lifestyle-chi.vercel.app/",
     },
     {
       id: 2,
+      name: "Canva",
+      description: "This is a MERN (MongoDB, Express, React, Node.js) stack project named \"Canva\". It is designed to provide a platform for creating and managing designs. The project is structured to separate frontend and backend functionalities, ensuring scalability and maintainability.",
+      images:canva,
+      techStack:[
+        {react:react,label:"React"},
+        {node:node,label:"Node.js"},
+        {mongo:mongodb,label:"MongoDB"},
+        {express:express,label:"Express"},
+        {tailwind:tailwind,label:"Tailwind Css"},
+        {ai:ai,label:"AI"},
+        {googleAuth:googleAuth,label:"GoogleAuth"},
+        {jwt:jwt,label:"JWT"},
+      ],
+      github:"https://github.com/Susanta0/canva",
+      liveLink:"https://canva-buht.onrender.com/",
+    },
+    {
+      id: 3,
       name: "Sephora",
       description: "Implemented a dynamic Images Slider, enhancing the visual appeal and user experience. Engineered robust Product Browsing and Cart functionality, ensuring seamless navigation and a streamlined checkout process.",
       images:sephora,
       techStack:[
         {jsLogo:js,label:"JavaScript"},
         {react:react,label:"React"},
+        {localLogo:localStorage,label:"Local Storage"},
         {chakraUi:chakra,label:"Chakra UI"},
         {tailwind:tailwind,label:"Tailwind Css"},
       ],
@@ -66,38 +87,7 @@ export const projectsData = [
       liveLink:"https://sephorasite.vercel.app/",
     },
     {
-      id: 3,
-      name: "Boat lifestyle",
-      description: "Developed an e-commerce application specializing in smartwatches, earbuds, and related accessories. Implemented features such as a slider, responsive design, simple animations, automatic background video, and a user-friendly login interface.",
-      images:boat,
-      techStack:[
-        {htmlLogo:html,label:"HTML"},
-        {cssLogo:css,label:"Css"},
-        {jsLogo:js,label:"JavaScript"},
-        {localLogo:localStorage,label:"Local Storage"},
-      ],
-      github:"https://github.com/Susanta0/boAt-lifestyle",
-      liveLink:"https://boatlife-style.netlify.app/",
-    },
-    {
       id: 4,
-      name: "TATA 1mg",
-      description: "This is a full-stack application built to mimic the functionalities of the popular e-commerce platform, TaTA 1mg. utilizing a modern tech stack and focusing on key features such as authentication, dynamic content creation.",
-      images:tata,
-      techStack:[
-        {jsLogo:js,label:"JavaScript"},
-        {react:react,label:"React"},
-        {node:node,label:"Node.js"},
-        {express:express,label:"Express"},
-        {mongo:mongodb,label:"MongoDB"},
-        {chakraUi:chakra,label:"Chakra UI"},
-        {tailwind:tailwind,label:"Tailwind Css"},
-      ],
-      github: "https://github.com/Susanta0/TATA_1mg",
-      liveLink:"https://tata-1mg-azure.vercel.app/",
-    },
-    {
-      id: 5,
       name: "Skill-Showcase-Hub",
       description: "Skill Showcase Hub is a dynamic web platform built to provide a space for talented coders to showcase their skills through engaging contests. Participants can join contests, display their projects and also can win prize.",
       images:shillshowhub,
@@ -111,21 +101,6 @@ export const projectsData = [
       ],
       github: "https://github.com/Susanta0/Skill-Showcase-Hub",
       liveLink:"https://skill-showcase-hub.vercel.app/"
-    },
-    {
-      id: 6,
-      name: "Pluralsight",
-      description: "created a clone of the Pluralsight website using only HTML, CSS & JavaScript. Developed an online education website facilitating.I mplemented features like user login interface, responsiveness, and dropdown menu.",
-      images:pluralsight,
-      techStack:[
-        {htmlLogo:html,label:"HTML"},
-        {cssLogo:css,label:"Css"},
-        {jsLogo:js,label:"JavaScript"},
-        {localLogo:localStorage,label:"Local Storage"},
-      ],
-      github: "https://github.com/Susanta0/Project_pluralsight",
-      liveLink:"https://plural-sight-clone1.netlify.app/signin.html"
-      
     },
   ];
   
